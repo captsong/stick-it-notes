@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+    
+    <title>Stick It Notes</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Stick It Notes</h1>
+      <p id="ts">By --</p>
+    </div>
+    <!-- <button type="button" id="test" class="btn">Click Me</button> -->
+    <div id="form">
+      <!-- if an element wraps around the element - parent siya nung sa loob -->
+      <!-- if an element is both inside a parent - siblings sila -->
+      <form action="" id="inputForm">
+        <input
+          type="text"
+          name="title"
+          id="new-note-title-input"
+          class="inputText"
+          placeholder="Title"
+          autocomplete="off"
+          required
+          autofocus
+        />
+        <input
+            type="text"
+            name="content"
+            id="new-note-body-input"
+            class="inputText"
+            placeholder="Content"
+            autocomplete="off"
+            required
+            autofocus
+        />
+        <input type="submit" class ="btn" id="btnSubmit" value="Create Note" />
+      </form>
+    </div>
+    <h3 id="no-notes">No notes found. Add one!</h3>
+    <ul id="notes"></ul>
+    <script src="myscript.js"></script>
+  </body>
+</html>
